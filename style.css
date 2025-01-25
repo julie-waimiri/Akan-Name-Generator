@@ -179,3 +179,8 @@ button[type="submit"]:hover {
         gap: 10px;
     }
 }
+
+
+input:invalid {
+    border-color: #a71e0e;
+}
