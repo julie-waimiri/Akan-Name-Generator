@@ -113,3 +113,26 @@ p {
     color: #000000;
     margin-bottom: 25px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #283541;
+
+}
+
+input[type="number"], input[type="radio"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #c7c5c5;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+}
