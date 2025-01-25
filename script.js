@@ -30,3 +30,19 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
     
     resultDiv.classList.remove('hidden');
 });
+
+function calculateAkanName(year, month, day, gender) {
+    const CC = Math.floor(year / 100); 
+    const YY = year % 100;            
+    
+    const dayOfWeek = Math.floor(((CC / 4) - 2 * CC - 1 + (5 * YY / 4) + (26 * (month + 1) / 10) + day) % 7);
+    
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    
+    if (gender === "male") {
+        return maleNames[(dayOfWeek + 7) % 7]; // Ensure positive index
+    } else if (gender === "female") {
+        return femaleNames[(dayOfWeek + 7) % 7]; // Ensure positive index
+    }
+}
