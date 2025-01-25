@@ -22,19 +22,21 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
         alert('Please enter a valid month (1-12)');
         return;
     }
-
+    
     const akanName = calculateAkanName(year, month, day, gender);
     
     const resultDiv = document.getElementById('result');
     resultDiv.textContent = `Your Akan name is: ${akanName}`;
     
+    // Show result by removing the 'hidden' class
     resultDiv.classList.remove('hidden');
 });
 
 function calculateAkanName(year, month, day, gender) {
-    const CC = Math.floor(year / 100); 
-    const YY = year % 100;            
+    const CC = Math.floor(year / 100); // Century
+    const YY = year % 100;            // Year within century
     
+    // Day of the week calculation using the provided formula
     const dayOfWeek = Math.floor(((CC / 4) - 2 * CC - 1 + (5 * YY / 4) + (26 * (month + 1) / 10) + day) % 7);
     
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
