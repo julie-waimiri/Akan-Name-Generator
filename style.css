@@ -40,3 +40,21 @@ body {
     padding: 40px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
+
+.landing-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(219, 196, 196);
+}
+
+.landing-content p1 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #3d0505;
+}
+
+.landing-description {
+    margin: 20px 0;
+    line-height: 2;
+    font-size: 1rem;
+}
