@@ -85,3 +85,31 @@ body {
     background-color: #5c45507e;
     padding: 20px;
 }
+
+
+.container {
+    background-color: #7e839bab;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family:'Times New Roman';
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #490f0f;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    color: #000000;
+    margin-bottom: 25px;
+}
