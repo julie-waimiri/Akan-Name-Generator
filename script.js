@@ -22,4 +22,11 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
         alert('Please enter a valid month (1-12)');
         return;
     }
+
+    const akanName = calculateAkanName(year, month, day, gender);
+    
+    const resultDiv = document.getElementById('result');
+    resultDiv.textContent = `Your Akan name is: ${akanName}`;
+    
+    resultDiv.classList.remove('hidden');
 });
