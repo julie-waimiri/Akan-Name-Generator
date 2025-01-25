@@ -41,8 +41,8 @@ function calculateAkanName(year, month, day, gender) {
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     
     if (gender === "male") {
-        return maleNames[(dayOfWeek + 7) % 7]; // Ensure positive index
+        return maleNames[(dayOfWeek + 7) % 7]; 
     } else if (gender === "female") {
-        return femaleNames[(dayOfWeek + 7) % 7]; // Ensure positive index
+        return femaleNames[(dayOfWeek + 7) % 7]; 
     }
 }
