@@ -162,3 +162,20 @@ button[type="submit"]:hover {
     font-family: Arial;
     font-weight: 500;
 }
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .landing-content, .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .landing-content h1 {
+        font-size: 2rem;
+    }
+
+    .gender-select {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
